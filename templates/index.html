@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kotak Config Python</title>
+    <style>
+        /* Pengaturan (Config) Tampilan Halaman */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Pengaturan (Config) Kotak Lengkap */
+        .kotak-config {
+            width: 320px;                  /* Lebar kotak */
+            padding: 24px;                 /* Jarak isi ke tepi kotak */
+            background-color: {{ warna }}; /* Warna diambil dari Python */
+            color: white;                  /* Warna teks */
+            border: 3px solid #1e40af;     /* Tebal & warna garis tepi */
+            border-radius: 16px;           /* Kelengkungan sudut kotak */
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15); /* Efek bayangan */
+            text-align: center;            /* Posisi teks */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Memanggil kotak dan menampilkan data dari Python -->
+    <div class="kotak-config">
+        <h2>{{ judul }}</h2>
+        <p>Hasil logika Python adalah:</p>
+        <h1>{{ angka }}</h1>
+    </div>
+
+</body>
+</html>
